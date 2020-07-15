@@ -55,8 +55,6 @@ public class HealthBar : MonoBehaviour
         if (_player == null) return;
 
         _maxHealth = _player.Health;
-        _lastHealth = _maxHealth;
-
         _maxArmor = _player.Arrmor;
     }
 
@@ -114,7 +112,6 @@ public class HealthBar : MonoBehaviour
     public void Reset()
     {
         UpdateIndicators();
-        _lastHealth = _maxHealth;
         _player.OnHitEvent.AddListener(GotHit);
         gameObject.SetActive(true);
     }
