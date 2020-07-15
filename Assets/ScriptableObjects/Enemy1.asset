@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: Enemy1
   m_EditorClassIdentifier: 
   prefab: {fileID: 2112784651216429169, guid: 0a2c4e61bc9f1f24c95ba889593f6d01, type: 3}
-  speed: 2
+  speed: 3
   rotateSpeed: 1
   health: 50
   arrmor: 0
-  weapons: []
   hitDistance: 2
   damage: 1
   hitAnimationsCount: 3

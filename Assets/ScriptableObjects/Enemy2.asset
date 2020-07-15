@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 2112784651216429169, guid: 2a96aa4829efd49489e00dfae72cf65b, type: 3}
   speed: 2.1
-  rotateSpeed: 1.5
+  rotateSpeed: 2.5
   health: 80
   arrmor: 0
-  weapons: []
   hitDistance: 2
   damage: 2
   hitAnimationsCount: 3

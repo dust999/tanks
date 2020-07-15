@@ -17,9 +17,8 @@ MonoBehaviour:
   rotateSpeed: 1.5
   health: 100
   arrmor: 0
-  weapons: []
   hitDistance: 2.1
-  damage: 4
+  damage: 5
   hitAnimationsCount: 3
   hitInt: Hit
   hitBool: IsAttacking
