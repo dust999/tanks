@@ -28,8 +28,7 @@ public class GameController : MonoBehaviour
     public void Start()
     {
         SpawnPlayer();
-        _enemySpawner?. Setup(_enemies, _healthBar , _playerAtScene , _spawnPoints);
-        _enemySpawner.GenerateEnemies();
+        _enemySpawner?.Setup(_enemies, _healthBar , _playerAtScene , _spawnPoints);
     }
 
     public void GameOver()

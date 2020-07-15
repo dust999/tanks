@@ -31,11 +31,6 @@ public class EnemySpawner : MonoBehaviour
 
         _target = target;
 
-        GenerateEnemies();
-    }
-
-    public void GenerateEnemies()
-    {
         StartCoroutine(SpawnEnemies());
     }
 
