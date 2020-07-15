@@ -74,12 +74,12 @@ public class Player : BasePlayer
 
     private void WeaponUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Space))
             Fire();
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.LeftShift))
             SwitchWeapon(Direction.Forward);
-        else if (Input.GetKeyDown(KeyCode.Q))
+        else if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.LeftControl))
             SwitchWeapon(Direction.Backward);
     }
 
@@ -128,8 +128,11 @@ public class Player : BasePlayer
     {
         StopAllCoroutines();
         _currentDirrection = Direction.Forward;
-        _currentWeapon = 0;
         transform.eulerAngles = Vector3.zero;
+
+        _weapons[_currentWeapon]?.Disable();
+        _currentWeapon = 0;
+        _weapons[_currentWeapon]?.Enable();
 
         base.Reset();
         
