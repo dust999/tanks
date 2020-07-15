@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb8a0377195b8ab4c89607c97a5074e8, type: 3}
+  m_Name: PlayerSettings
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2601492819715259127, guid: 7637c0c9a53056d4fa8026dfb2d2d684, type: 3}
+  speed: 0.1
+  rotateSpeed: 2
+  health: 100
+  arrmor: 100
+  weapons:
+  - {fileID: 11400000, guid: 2b9b539f05a083d4f8f405ab1ae09c86, type: 2}
+  - {fileID: 11400000, guid: 2325d0810fea4014382a3d9b5d4e4e20, type: 2}
+  - {fileID: 11400000, guid: 7c3d3808ce6374f46b0181894efc79a2, type: 2}
+  - {fileID: 11400000, guid: 0ebe89a7009cf064c99009c6eb934254, type: 2}
